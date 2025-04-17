@@ -1,7 +1,7 @@
 import "./style.css";
-import RCLogo from "../public/logo.png";
+import RCLogo from "../src/logo.png";
 
-document.querySelector("#app").innerHTML = `
+document.querySelector("#app").innerHTML += `
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="${RCLogo}" class="logo" alt="RC logo" />
@@ -16,4 +16,4 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-setupCounter(document.querySelector("#counter"));
+// setupCounter(document.querySelector("#counter"));
