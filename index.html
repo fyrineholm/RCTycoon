@@ -4,17 +4,34 @@
 		<title>RollerCoaster Tycoon overview</title>
 		<link rel="icon" href="./src/logo.png" />
 	</head>
-	<body class="bg-gray-100">
-		<header class="bg-blue-600 text-white shadow-md">
+	<body class="bg-gray-700 text-red-600">
+		<header class="bg-blue-600 text-white shadow-md w-screen">
 			<nav class="container mx-auto px-6 py-3">
-				<div href="./#">Gameplay<sub>Bernard Hoeger Jerez</sub></div>
-				<a href="./development">Development<sub>Fýrine</sub></a>
-				<div href="./release">Release<sub>Logan Howie</sub></div>
-				<div href="./reception">Reception<sub>Finn Aberdein</sub></div>
+				<div class="flex justify-between items-center">
+					<div class="w-24 animation-bounce hover:bg-red-500">
+						<img
+							id="logo"
+							class="cursor-pointer"
+							src="./src/logo.png"
+						/>
+					</div>
+					<a class="navopt" href="./gameplay">
+						Gameplay<sub>Bernard Hoeger Jerez</sub>
+					</a>
+					<a class="navopt" href="./development"
+						>Development<sub>Fýrine</sub></a
+					>
+					<a class="navopt" href="./release"
+						>Release<sub>Logan Howie</sub></a
+					>
+					<a class="navopt" href="./reception">
+						Reception<sub>Finn Aberdein</sub>
+					</a>
+				</div>
 			</nav>
-			All about RCT!
 		</header>
-		<footer>
+		<br />
+		<footer class="animation-bounce">
 			<p>
 				Source content from
 				<a
