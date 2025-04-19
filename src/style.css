@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes logo {
+	from {
+		transform: rotate(10deg);
+	}
+	to {
+		transform: rotate(-10deg);
+	}
+}
+
+* {
+	transition: 250ms;
+}
+
+.navopt sub {
+	opacity: 0.3;
+}
+
+.navopt {
+	color: white;
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+}
+.navopt:hover {
+	color: lightblue;
+}
+
+#logo {
+	animation: logo 1s ease-in-out 0s infinite alternate;
+}

@@ -4,17 +4,51 @@
 		<title>RollerCoaster Tycoon overview</title>
 		<link rel="icon" href="./src/logo.png" />
 	</head>
-	<body class="bg-gray-100">
-		<header class="bg-blue-600 text-white shadow-md">
+	<body class="bg-gray-700 text-red-600">
+		<header class="bg-blue-600 text-white shadow-md w-screen">
 			<nav class="container mx-auto px-6 py-3">
-				<div href="./#">Gameplay<sub>Bernard Hoeger Jerez</sub></div>
-				<a href="./development">Development<sub>Fýrine</sub></a>
-				<div href="./release">Release<sub>Logan Howie</sub></div>
-				<div href="./reception">Reception<sub>Finn Aberdein</sub></div>
+				<div class="flex justify-between items-center">
+					<div id="header-logo">
+						<a href="/">
+							<div class="w-24 animation-bounce hover:bg-red-500">
+								<img
+									id="logo"
+									class="cursor-pointer"
+									src="./src/logo.png"
+								/>
+							</div>
+						</a>
+					</div>
+					<div id="header-desktop" class="hidden md:flex space-x-4">
+						<a class="navopt" href="./gameplay/index.html">
+							Gameplay<sub>Bernard</sub>
+						</a>
+						<a class="navopt" href="./development/index.html"
+							>Development<sub>Fýrine</sub></a
+						>
+						<a class="navopt" href="./release/index.html"
+							>Release<sub>Logan</sub></a
+						>
+						<a class="navopt" href="./reception/index.html">
+							Reception<sub>Finn</sub>
+						</a>
+					</div>
+					<div
+						id="header-expander-button-thingy"
+						class="md:hidden cursor-pointer bg-sky-200 rounded px-3 py-1 black text-black justify-items items-center text-xl hover:bg-sky-300"
+					>
+						<button
+							class="cursor-pointer black text-black justify-items items-center text-xl focus:outline-none"
+						>
+							=
+						</button>
+					</div>
+					<div id="header-mobile">HEADER</div>
+				</div>
 			</nav>
-			All about RCT!
 		</header>
-		<footer>
+		<br />
+		<footer class="animation-bounce">
 			<p>
 				Source content from
 				<a
@@ -24,5 +58,15 @@
 			</p>
 		</footer>
 		<script type="module" src="/src/main.js"></script>
+		<script>
+			const headerExpanderButtonThingy = document.getElementById(
+				"header-expander-button-thingy",
+			);
+			const headerMobile = document.getElementById("header-mobile");
+
+			headerExpanderButtonThingy.addEventListener("click", () => {
+				headerExpanderButtonThingy.classList.toggle("hidden");
+			});
+		</script>
 	</body>
 </html>
