@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>RollerCoaster Tycoon overview</title>
-		<link rel="icon" href="./src/logo.png" />
+		<link rel="icon" href="/src/logo.png" />
 	</head>
-	<body class="bg-gray-700 text-red-600">
+	<body class="bg-gray-700 text-white">
 		<header class="bg-blue-600 text-white shadow-md w-screen">
 			<nav class="container mx-auto px-6 py-3">
 				<div class="flex justify-between items-center">
@@ -14,22 +14,22 @@
 								<img
 									id="logo"
 									class="cursor-pointer"
-									src="./src/logo.png"
+									src="/src/logo.png"
 								/>
 							</div>
 						</a>
 					</div>
 					<div id="header-desktop" class="hidden md:flex space-x-4">
-						<a class="navopt" href="./gameplay/index.html">
+						<a class="navopt" href="/gameplay/index.html">
 							Gameplay<sub>Bernard</sub>
 						</a>
-						<a class="navopt" href="./development/index.html"
+						<a class="navopt" href="/development/index.html"
 							>Development<sub>Fýrine</sub></a
 						>
-						<a class="navopt" href="./release/index.html"
+						<a class="navopt" href="/release/index.html"
 							>Release<sub>Logan</sub></a
 						>
-						<a class="navopt" href="./reception/index.html">
+						<a class="navopt" href="/reception/index.html">
 							Reception<sub>Finn</sub>
 						</a>
 					</div>
@@ -43,10 +43,39 @@
 							=
 						</button>
 					</div>
-					<div id="header-mobile">HEADER</div>
+					<div id="header-mobile" class="hidden md:hidden mt-4">
+						<a
+							class="navopt navopt-mobile"
+							href="/gameplay/index.html"
+						>
+							Gameplay<sub>Bernard</sub>
+						</a>
+						<a
+							class="navopt navopt-mobile"
+							href="/development/index.html"
+							>Development<sub>Fýrine</sub></a
+						>
+						<a
+							class="navopt navopt-mobile"
+							href="/release/index.html"
+							>Release<sub>Logan</sub></a
+						>
+						<a
+							class="navopt navopt-mobile"
+							href="/reception/index.html"
+						>
+							Reception<sub>Finn</sub>
+						</a>
+					</div>
 				</div>
 			</nav>
 		</header>
+		<br />
+		<div>
+			This website displays information about the video game RollerCoaster
+			Tycoon. This website consists of 4 pages made by 4 people on GitHub.
+			The header shows the first name of the person who created each page.
+		</div>
 		<br />
 		<footer class="animation-bounce">
 			<p>
@@ -66,6 +95,7 @@
 
 			headerExpanderButtonThingy.addEventListener("click", () => {
 				headerExpanderButtonThingy.classList.toggle("hidden");
+				headerMobile.classList.toggle("hidden");
 			});
 		</script>
 	</body>
